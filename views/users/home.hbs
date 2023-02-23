@@ -1,0 +1,15 @@
+<h1>My Profile</h1>
+{{#each post.posts}}
+
+  <div class="card" style="width: 18rem;">
+    {{!-- <img src="{{foto}}" class="card-img-top" alt="..." /> --}}
+    <div class="card-body">
+      <img src="{{this.foto}}"/>
+      <p class="card-text">{{detalles}}</p>
+      <p class="card-text">{{this.location}}</p>
+      <p class="card-text">From:{{this.posts.foto}}</p>
+      <a href="/user/{{_id}}" class="btn btn-primary">More</a>
+    </div>
+  </div>
+
+{{/each}}
